@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>آلة حاسبة حديثة</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <div class="calculator">
+    <!-- تاريخ العمليات الحسابية -->
+    <div class="history" id="history">
+      <!-- العمليات السابقة ستظهر هنا -->
+    </div>
+    
+    <!-- الإخراج -->
+    <div id="output" class="output">0</div>
+    
+    <!-- الأزرار -->
+    <div class="grid grid-cols-4 gap-4">
+      <button class="btn clear" onclick="clearOutput()">C</button>
+      <button class="btn" onclick="appendCharacter('7')">7</button>
+      <button class="btn" onclick="appendCharacter('8')">8</button>
+      <button class="btn" onclick="appendCharacter('9')">9</button>
+      
+      <button class="btn operator" onclick="appendCharacter('/')">÷</button>
+      <button class="btn" onclick="appendCharacter('4')">4</button>
+      <button class="btn" onclick="appendCharacter('5')">5</button>
+      <button class="btn" onclick="appendCharacter('6')">6</button>
+      
+      <button class="btn operator" onclick="appendCharacter('*')">×</button>
+      <button class="btn" onclick="appendCharacter('1')">1</button>
+      <button class="btn" onclick="appendCharacter('2')">2</button>
+      <button class="btn" onclick="appendCharacter('3')">3</button>
+      
+      <button class="btn operator" onclick="appendCharacter('-')">-</button>
+      <button class="btn" onclick="appendCharacter('0')">0</button>
+      <button class="btn" onclick="appendCharacter('.')">.</button>
+      <button class="btn operator" onclick="appendCharacter('+')">+</button>
+      
+      <button class="btn equal col-span-4" onclick="calculate()">=</button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+  
+</body>
+</html>

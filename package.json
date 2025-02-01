@@ -1,6 +1,9 @@
 {
   "devDependencies": {
-    "electron": "^34.0.2"
+    "@types/electron": "^1.4.38",
+    "@types/node": "^22.13.0",
+    "electron": "^34.0.2",
+    "typescript": "^5.7.3"
   },
   "name": "new-folder-(11)",
   "version": "1.0.0",
