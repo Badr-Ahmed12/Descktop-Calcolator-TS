@@ -1,0 +1,14 @@
+# استثناء مجلدات النظام وملفات البيئة
+node_modules/
+dist/
+build/
+.DS_Store
+Thumbs.db
+
+# استثناء ملفات الإعدادات المحلية
+.env
+.vscode/
+.idea/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
